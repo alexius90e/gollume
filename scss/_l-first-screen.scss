@@ -1,0 +1,22 @@
+.first-screen {
+  height: 1400px;
+  padding-top: 334px;
+  background: url(../assets/first-screen-bg.webp) center bottom no-repeat;
+  background-size: cover;
+
+  @include desktop {
+    padding-top: 244px;
+  }
+
+  @include laptop {
+    padding-top: 214px;
+  }
+
+  @include tablet {
+    padding-top: 164px;
+  }
+
+  @include mobile {
+    padding-top: 134px;
+  }
+}

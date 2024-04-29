@@ -1,0 +1,225 @@
+@font-face {
+  font-family: "TTRationalist";
+  src: url("../fonts/TTRationalistMedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TTRationalist";
+  src: url("../fonts/TTRationalistDemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TTRationalist";
+  src: url("../fonts/TTRationalistBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TTRationalist";
+  src: url("../fonts/TTRationalistExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+html {
+  font-size: 16px;
+  font-family: "TTRationalist", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  overflow-y: scroll;
+  color: #181d42;
+  background-color: #344246;
+}
+
+a,
+button,
+input,
+textarea {
+  font-family: "TTRationalist", sans-serif;
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h2 {
+  max-width: 740px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  color: #bb320e;
+  text-shadow: 1px 1px #271301, -1px -1px #271301, -1px 1px #271301, 1px -1px #271301, -3px 3px #fdab60, 4px 4px #271301;
+  transform: rotate(-3deg);
+}
+
+.container {
+  max-width: 1210px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+@media (max-width: 576px) {
+  .header {
+    padding: 16px 0;
+  }
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 54px;
+  max-width: 1350px;
+  height: 310px;
+}
+@media (max-width: 1200px) {
+  .header .container {
+    height: 220px;
+  }
+}
+@media (max-width: 992px) {
+  .header .container {
+    gap: 24px;
+    height: 190px;
+  }
+}
+@media (max-width: 768px) {
+  .header .container {
+    height: 140px;
+  }
+}
+@media (max-width: 576px) {
+  .header .container {
+    gap: 16px;
+    height: auto;
+  }
+}
+.header__logo-image {
+  max-width: 100%;
+  height: auto;
+}
+.header__social {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+@media (max-width: 576px) {
+  .header__social {
+    gap: 8px;
+  }
+}
+.header__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  aspect-ratio: 1/1;
+  border-radius: 54px;
+  border: 3px solid #271301;
+  background: url(../assets/button-bg.svg) center no-repeat;
+  background-size: cover;
+  box-shadow: 4px 4px 0 #271301;
+  background: #d44e20;
+  cursor: pointer;
+}
+@media (max-width: 992px) {
+  .header__social-link {
+    width: 48px;
+    border-width: 2px;
+    box-shadow: 2px 2px 0 #271301;
+  }
+}
+@media (max-width: 768px) {
+  .header__social-link {
+    width: 36px;
+    box-shadow: 1px 1px 0 #271301;
+  }
+}
+@media (max-width: 576px) {
+  .header__social-link {
+    width: 28px;
+    border-width: 2px;
+  }
+}
+.header__social-link::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  aspect-ratio: 1/1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media (max-width: 992px) {
+  .header__social-link::before {
+    width: 24px;
+    background-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .header__social-link::before {
+    width: 20px;
+    background-size: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .header__social-link::before {
+    width: 16px;
+    background-size: 16px;
+  }
+}
+.header__social-link_x::before {
+  background-image: url(../assets/x.svg);
+}
+.header__social-link_tg::before {
+  background-image: url(../assets/tg.svg);
+}
+
+.first-screen {
+  height: 1400px;
+  padding-top: 334px;
+  background: url(../assets/first-screen-bg.webp) center bottom no-repeat;
+  background-size: cover;
+}
+@media (max-width: 1200px) {
+  .first-screen {
+    padding-top: 244px;
+  }
+}
+@media (max-width: 992px) {
+  .first-screen {
+    padding-top: 214px;
+  }
+}
+@media (max-width: 768px) {
+  .first-screen {
+    padding-top: 164px;
+  }
+}
+@media (max-width: 576px) {
+  .first-screen {
+    padding-top: 134px;
+  }
+}

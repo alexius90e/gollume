@@ -1,0 +1,119 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  @include mobile {
+    padding: 16px 0;
+  }
+
+  & .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 54px;
+    max-width: 1350px;
+    height: 310px;
+
+    @include desktop {
+      height: 220px;
+    }
+
+    @include laptop {
+      gap: 24px;
+      height: 190px;
+    }
+
+    @include tablet {
+      height: 140px;
+    }
+
+    @include mobile {
+      gap: 16px;
+      height: auto;
+    }
+  }
+
+  &__logo {
+    &-image {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__social {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    @include mobile {
+      gap: 8px;
+    }
+
+    &-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 70px;
+      aspect-ratio: 1 / 1;
+      border-radius: 54px;
+      border: 3px solid #271301;
+      background: url(../assets/button-bg.svg) center no-repeat;
+      background-size: cover;
+      box-shadow: 4px 4px 0 #271301;
+      background: #d44e20;
+      cursor: pointer;
+
+      @include laptop {
+        width: 48px;
+        border-width: 2px;
+        box-shadow: 2px 2px 0 #271301;
+      }
+
+      @include tablet {
+        width: 36px;
+        box-shadow: 1px 1px 0 #271301;
+      }
+
+      @include mobile {
+        width: 28px;
+        border-width: 2px;
+      }
+
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 40px;
+        aspect-ratio: 1 / 1;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @include laptop {
+          width: 24px;
+          background-size: 24px;
+        }
+
+        @include tablet {
+          width: 20px;
+          background-size: 20px;
+        }
+
+        @include mobile {
+          width: 16px;
+          background-size: 16px;
+        }
+      }
+
+      &_x::before {
+        background-image: url(../assets/x.svg);
+      }
+
+      &_tg::before {
+        background-image: url(../assets/tg.svg);
+      }
+    }
+  }
+}
