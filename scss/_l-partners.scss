@@ -1,0 +1,52 @@
+.partners {
+  padding: 41px 0 30px;
+
+  &__title {
+    margin: 0 0 40px;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    color: #84a2aa;
+    text-align: center;
+    text-shadow: 2px 2px #271301, -2px -2px #271301, -2px 2px #271301, 2px -2px #271301,
+      6px 6px #608089;
+    transform: rotate(-3deg);
+
+    @include mobile {
+      font-size: 64px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    @include mobile {
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    border: 2px solid #000000;
+    border-radius: 96px;
+    box-shadow: 4px 4px #608089;
+
+    @include mobile {
+      border-width: 1px;
+    }
+
+    &-image {
+      display: block;
+      max-width: 92px;
+      width: 100%;
+
+      @include mobile {
+        max-width: 64px;
+      }
+    }
+  }
+}
