@@ -1,0 +1,244 @@
+.roadmap {
+  position: relative;
+  padding: 200px 0 22px;
+  overflow: hidden;
+  background: url(../assets/roadmap-bg.webp) center no-repeat;
+  background-size: 100% 100%;
+
+  &__advantages {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 16px;
+    padding: 16px 16px 12px;
+    border-top: 2px solid #271301;
+    border-bottom: 5px solid #271301;
+    background-color: #bb320e;
+    transform: rotate(-1deg);
+
+    @include tablet {
+      gap: 4px 8px;
+      padding: 12px 12px 8px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 12px;
+      background-color: #fdab60;
+
+      @include tablet {
+        height: 8px;
+      }
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+
+      &-icon {
+        max-width: 36px;
+        transform: rotate(12deg);
+
+        @include laptop {
+          max-width: 30px;
+        }
+
+        @include mobile {
+          max-width: 24px;
+        }
+
+        @include mobilesm {
+          max-width: 20px;
+        }
+      }
+
+      &-text {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: 0.08em;
+        text-align: center;
+        color: #ffa24b;
+        text-shadow: 1px 1px #271301, -1px -1px #271301, -1px 1px #271301, 1px -1px #271301,
+          3px 3px #271301;
+        transform: rotate(-2deg);
+
+        @include laptop {
+          font-size: 20px;
+        }
+
+        @include mobile {
+          font-size: 16px;
+        }
+
+        @include mobilesm {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    position: relative;
+
+    @include laptop {
+      flex-direction: column-reverse;
+      max-width: 595px;
+      margin: 0 auto;
+    }
+
+    &-block {
+      flex: 0 0 50%;
+      box-sizing: border-box;
+
+      @include laptop {
+        flex: 0 1 auto;
+      }
+
+      &_right {
+        margin-left: -20px;
+
+        @include laptop {
+          margin: 0 0 -20px;
+        }
+      }
+    }
+  }
+
+  &__title {
+    margin: 0 0 15px;
+    font-weight: 700;
+    font-size: 144px;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    text-align: right;
+    color: #bb320e;
+    text-shadow: 2px 2px #271301, -2px -2px #271301, -2px 2px #271301, 2px -2px #271301,
+      -6px 6px #fdab60, 8px 8px #271301;
+    transform: rotate(-3deg);
+
+    @include laptop {
+      margin: 0 0 24px;
+      font-size: 80px;
+      text-align: center;
+    }
+  }
+
+  &__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+    box-sizing: border-box;
+    padding: 30px 50px 40px;
+    background-color: #fdab60;
+
+    @include mobile {
+      padding: 30px 30px 40px;
+    }
+
+    &_diamond {
+      z-index: 4;
+    }
+
+    &_cool {
+      margin-top: -40px;
+      z-index: 2;
+    }
+
+    &_explode {
+      z-index: 1;
+    }
+
+    &_speaker {
+      margin-top: -40px;
+      z-index: 3;
+    }
+
+    &_diamond,
+    &_cool {
+      width: 100%;
+      aspect-ratio: 1.2935479 / 1;
+      background: url(../assets/roadmap-card-left-bg.svg) center no-repeat;
+    }
+
+    &_explode,
+    &_speaker {
+      align-items: flex-end;
+      width: 100%;
+      padding-top: 20px;
+      aspect-ratio: 1.291595197 / 1;
+      background: url(../assets/roadmap-card-right-bg.svg) center no-repeat;
+    }
+
+    &-image {
+      max-width: 144px;
+      filter: drop-shadow(4px 4px #271301);
+
+      @include mobile {
+        max-width: 80px;
+      }
+
+      @include mobilesm {
+        max-width: 60px;
+      }
+    }
+
+    &_diamond &-image,
+    &_cool &-image {
+      transform: rotate(14deg);
+    }
+
+    &_explode &-image,
+    &_speaker &-image {
+      transform: rotate(-14deg);
+    }
+
+    &-text {
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 110%;
+      letter-spacing: 0.02em;
+      color: #bb320e;
+      text-shadow: 1px 1px #271301, -1px -1px #271301, -1px 1px #271301, 1px -1px #271301,
+        -2px 2px #ffa24b, 3px 3px #271301;
+
+      @include desktop {
+        font-size: 32px;
+      }
+
+      @include laptop {
+        font-size: 42px;
+      }
+
+      @include mobile {
+        font-size: 28px;
+      }
+
+      @include mobilesm {
+        font-size: 19px;
+      }
+    }
+
+    &_diamond &-text,
+    &_cool &-text {
+      transform: rotate(-3deg);
+    }
+
+    &_explode &-text,
+    &_speaker &-text {
+      text-align: right;
+      transform: rotate(3deg);
+    }
+  }
+}
