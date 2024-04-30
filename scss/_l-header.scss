@@ -37,7 +37,9 @@
 
   &__logo {
     &-image {
+      display: block;
       max-width: 100%;
+      width: 1180px;
       height: auto;
     }
   }
@@ -63,7 +65,6 @@
       background: url(../assets/button-bg.svg) center no-repeat;
       background-size: cover;
       box-shadow: 4px 4px 0 #271301;
-      background: #d44e20;
       cursor: pointer;
 
       @include laptop {

@@ -1,26 +1,21 @@
-<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_iii_86_812)">
-<rect width="70" height="70" rx="35" fill="#D44E20"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 357.4 357.4" style="enable-background:new 0 0 357.4 357.4;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#BB320E;}
+	.st1{fill:#FF4100;}
+	.st2{fill:#D44E20;}
+	.st3{fill:#FDAB60;}
+</style>
+<g>
+	<circle class="st0" cx="178.7" cy="178.7" r="178.7"/>
+	<path class="st1" d="M357,192.1C357,192.1,357,192.1,357,192.1c-0.8,11.3-2.7,22.3-5.5,32.9c-1.3-4.9-2.8-9.7-4.5-14.4v0
+		c-13.4-37.2-38.8-68.7-71.5-89.8c32.1,14,59.3,37.1,78.3,66C354.8,188.5,355.9,190.3,357,192.1z"/>
+	<path class="st2" d="M346.9,210.5L346.9,210.5c-24.8,68.9-90.8,118.1-168.2,118.1c-62.5,0-117.6-32.1-149.5-80.8
+		c17-81,88.8-141.8,174.9-141.8c25.3,0,49.4,5.3,71.3,14.8C308.1,141.9,333.5,173.3,346.9,210.5z"/>
+	<path class="st3" d="M351.4,224.9C351.4,224.9,351.4,224.9,351.4,224.9c-20.4,76.3-90,132.5-172.7,132.5
+		c-64.8,0-121.5-34.5-152.9-86.1c0.6-8,1.7-15.9,3.3-23.5c31.9,48.7,87,80.8,149.5,80.8c77.4,0,143.4-49.2,168.2-118.1
+		C348.6,215.2,350.1,220,351.4,224.9z"/>
 </g>
-<defs>
-<filter id="filter0_iii_86_812" x="0" y="0" width="70" height="70" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="-5"/>
-<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0.992157 0 0 0 0 0.670588 0 0 0 0 0.376471 0 0 0 1 0"/>
-<feBlend mode="normal" in2="shape" result="effect1_innerShadow_86_812"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="18"/>
-<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.255555 0 0 0 0 0 0 0 0 1 0"/>
-<feBlend mode="normal" in2="effect1_innerShadow_86_812" result="effect2_innerShadow_86_812"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dx="5" dy="21"/>
-<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0.733333 0 0 0 0 0.196078 0 0 0 0 0.054902 0 0 0 1 0"/>
-<feBlend mode="normal" in2="effect2_innerShadow_86_812" result="effect3_innerShadow_86_812"/>
-</filter>
-</defs>
 </svg>

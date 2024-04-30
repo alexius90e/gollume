@@ -1,5 +1,4 @@
 .first-screen {
-  height: 1400px;
   padding-top: 334px;
   background: url(../assets/first-screen-bg.webp) center bottom no-repeat;
   background-size: cover;
@@ -17,6 +16,305 @@
   }
 
   @include mobile {
-    padding-top: 134px;
+    padding-top: 124px;
+  }
+
+  @include mobilesm {
+    padding-top: 110px;
+  }
+
+  & .container {
+    display: flex;
+    max-width: 1436px;
+
+    @include laptop {
+      flex-direction: column;
+      gap: 40px;
+      max-width: 635px;
+    }
+
+    @include tablet {
+      gap: 20px;
+    }
+  }
+
+  &__gollume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-image {
+      display: block;
+      max-width: 100%;
+
+      @include laptop {
+        width: 595px;
+      }
+    }
+  }
+
+  &__info {
+    flex: 0 0 595px;
+
+    @include desktop {
+      flex: 0 0 500px;
+    }
+
+    @include laptop {
+      flex: 0 1 auto;
+      max-width: 595px;
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    margin: 0 0 24px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    color: #bb320e;
+    text-shadow: 1px 1px #271301, -1px -1px #271301, -1px 1px #271301, 1px -1px #271301,
+      -3px 3px #fdab60, 4px 4px #271301;
+    transform: rotate(-3deg);
+
+    @include tablet {
+      margin: 0 0 16px;
+      font-size: 56px;
+    }
+
+    @include mobile {
+      font-size: 46px;
+    }
+
+    @include mobilesm {
+      font-size: 36px;
+      text-shadow: 1px 1px #271301, -1px -1px #271301, -1px 1px #271301, 1px -1px #271301,
+        -2px 2px #fdab60, 3px 3px #271301;
+    }
+  }
+
+  &__counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding-top: 30px;
+    box-sizing: border-box;
+    aspect-ratio: 2.8876936 / 1;
+    background: url(../assets/counter-bg.svg) center no-repeat;
+
+    @include mobile {
+      gap: 3vw;
+      padding-top: 15px;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &-value {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 100%;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #fdab60;
+        text-shadow: 1.5px 1.5px #271301, -1.5px 1.5px #271301, 1.5px -1.5px #271301,
+          -1.5px -1.5px #271301;
+
+        @include desktop {
+          font-size: 56px;
+        }
+
+        @include laptop {
+          font-size: 64px;
+        }
+
+        @include mobile {
+          font-size: 12vw;
+          text-shadow: 1px 1px #271301, -1px 1px #271301, 1px -1px #271301, -1px -1px #271301;
+        }
+      }
+
+      &-name {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #fdab60;
+        text-shadow: 1.5px 1.5px #271301, -1.5px 1.5px #271301, 1.5px -1.5px #271301,
+          -1.5px -1.5px #271301;
+
+        @include desktop {
+          font-size: 28px;
+        }
+
+        @include laptop {
+          font-size: 32px;
+        }
+
+        @include mobile {
+          font-size: 4.5vw;
+          text-shadow: 1px 1px #271301, -1px 1px #271301, 1px -1px #271301, -1px -1px #271301;
+        }
+      }
+    }
+  }
+
+  &__course {
+    margin: 29px 0;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 110%;
+    letter-spacing: 0.02em;
+    color: #bb320e;
+    text-shadow: 1px 1px #271301, -1px -1px #271301, -1px 1px #271301, 1px -1px #271301,
+      -3px 3px #fdab60, 4px 4px #271301;
+
+    @include desktop {
+      font-size: 36px;
+    }
+
+    @include laptop {
+      font-size: 42px;
+    }
+
+    @include mobile {
+      font-size: 6.5vw;
+      text-shadow: 1px 1px #271301, -1px -1px #271301, -1px 1px #271301, 1px -1px #271301,
+        -2px 2px #fdab60, 3px 3px #271301;
+    }
+  }
+
+  &__presale {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 654px;
+    padding: 30px 20px 20px;
+    aspect-ratio: 0.9110568 / 1;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: #fff;
+    background: url(../assets/qr-bg.svg) center no-repeat;
+
+    @include desktop {
+      font-size: 18px;
+    }
+
+    @include laptop {
+      font-size: 22px;
+    }
+
+    @include tablet {
+      font-size: 20px;
+    }
+
+    @include mobile {
+      padding: 40px  20px;
+      font-size: 16px;
+    }
+
+    @include mobilesm {
+      padding: 14px;
+      font-size: 14px;
+    }
+
+    &-text {
+      margin: 0 0 6px;
+
+      @include mobile {
+        margin-bottom: 3px;
+      }
+    }
+
+    &-code {
+      font-weight: 700;
+      word-break: break-all;
+
+      &-button {
+        display: inline-block;
+        height: 24px;
+        width: 24px;
+        padding: 0;
+        border: none;
+        background: url(../assets/copy.svg) center no-repeat;
+        background-size: contain;
+
+        @include desktop {
+          height: 20px;
+        width: 20px;
+        }
+
+        @include laptop {
+          height: 24px;
+        width: 24px;
+        }
+
+        @include mobile {
+          height: 16px;
+        width: 16px;
+        }
+      }
+    }
+
+    &-qr {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 14px 0 2px;
+
+      @include mobile {
+        flex: 1 1 50%;
+        margin: 2px 0;
+      }
+
+      @include mobilesm {
+        flex: 0 1 40%;
+      }
+
+      &-image {
+        display: block;
+        max-width: 100%;
+
+        @include desktop {
+          width: 320px;
+        }
+
+        @include laptop {
+          width: 370px;
+        }
+
+        @include tablet {
+          width: 340px;
+        }
+
+        @include mobile {
+          position: absolute;
+          top: 0;
+          left: 50%;
+          bottom: 0;
+          object-fit: cover;
+          width: auto;
+          height: 100%;
+          transform: translateX(-50%);
+        }
+
+      }
+    }
+
+    &-disclaimer {
+      max-width: 352px;
+      margin: 0 auto;
+      transform: rotate(-3.5deg);
+    }
   }
 }
