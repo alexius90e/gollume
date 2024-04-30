@@ -318,7 +318,7 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fdab60;
-  text-shadow: 1.5px 1.5px #271301, -1.5px 1.5px #271301, 1.5px -1.5px #271301, -1.5px -1.5px #271301;
+  text-shadow: 1.5px 1.5px #271301, -1.5px 1.5px #271301, 1.5px -1.5px #271301, -1.5px -1.5px #271301, 5px 5px #7c2009;
 }
 @media (max-width: 1200px) {
   .first-screen__counter-item-value {
@@ -328,12 +328,12 @@ img {
 @media (max-width: 992px) {
   .first-screen__counter-item-value {
     font-size: 64px;
+    text-shadow: 1.5px 1.5px #271301, -1.5px 1.5px #271301, 1.5px -1.5px #271301, -1.5px -1.5px #271301, 4px 4px #7c2009;
   }
 }
 @media (max-width: 576px) {
   .first-screen__counter-item-value {
     font-size: 12vw;
-    text-shadow: 1px 1px #271301, -1px 1px #271301, 1px -1px #271301, -1px -1px #271301;
   }
 }
 .first-screen__counter-item-name {
@@ -343,7 +343,7 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fdab60;
-  text-shadow: 1.5px 1.5px #271301, -1.5px 1.5px #271301, 1.5px -1.5px #271301, -1.5px -1.5px #271301;
+  text-shadow: 1.5px 1.5px #271301, -1.5px 1.5px #271301, 1.5px -1.5px #271301, -1.5px -1.5px #271301, 4px 4px #7c2009;
 }
 @media (max-width: 1200px) {
   .first-screen__counter-item-name {
@@ -358,7 +358,7 @@ img {
 @media (max-width: 576px) {
   .first-screen__counter-item-name {
     font-size: 4.5vw;
-    text-shadow: 1px 1px #271301, -1px 1px #271301, 1px -1px #271301, -1px -1px #271301;
+    text-shadow: 1px 1px #271301, -1px 1px #271301, 1px -1px #271301, -1px -1px #271301, 3px 3px #7c2009;
   }
 }
 .first-screen__course {

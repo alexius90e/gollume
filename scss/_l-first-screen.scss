@@ -123,7 +123,7 @@
         text-align: center;
         color: #fdab60;
         text-shadow: 1.5px 1.5px #271301, -1.5px 1.5px #271301, 1.5px -1.5px #271301,
-          -1.5px -1.5px #271301;
+          -1.5px -1.5px #271301, 5px 5px #7c2009;
 
         @include desktop {
           font-size: 56px;
@@ -131,11 +131,12 @@
 
         @include laptop {
           font-size: 64px;
+          text-shadow: 1.5px 1.5px #271301, -1.5px 1.5px #271301, 1.5px -1.5px #271301,
+          -1.5px -1.5px #271301, 4px 4px #7c2009;
         }
 
         @include mobile {
           font-size: 12vw;
-          text-shadow: 1px 1px #271301, -1px 1px #271301, 1px -1px #271301, -1px -1px #271301;
         }
       }
 
@@ -147,7 +148,7 @@
         text-align: center;
         color: #fdab60;
         text-shadow: 1.5px 1.5px #271301, -1.5px 1.5px #271301, 1.5px -1.5px #271301,
-          -1.5px -1.5px #271301;
+          -1.5px -1.5px #271301, 4px 4px #7c2009;
 
         @include desktop {
           font-size: 28px;
@@ -159,7 +160,8 @@
 
         @include mobile {
           font-size: 4.5vw;
-          text-shadow: 1px 1px #271301, -1px 1px #271301, 1px -1px #271301, -1px -1px #271301;
+          text-shadow: 1px 1px #271301, -1px 1px #271301, 1px -1px #271301, -1px -1px #271301,
+            3px 3px #7c2009;
         }
       }
     }
