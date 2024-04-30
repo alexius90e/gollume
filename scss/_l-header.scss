@@ -65,6 +65,8 @@
       background: url(../assets/button-bg.svg) center no-repeat;
       background-size: cover;
       box-shadow: 4px 4px 0 #271301;
+      transition: transform ease-in-out 0.14s;
+      will-change: transform;
       cursor: pointer;
 
       @include laptop {
@@ -81,6 +83,14 @@
       @include mobile {
         width: 28px;
         border-width: 2px;
+      }
+
+      &:hover {
+        transform: scale(1.02);
+      }
+
+      &:active {
+        transform: scale(0.94);
       }
 
       &::before {

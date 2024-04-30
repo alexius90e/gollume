@@ -34,9 +34,20 @@
     border: 2px solid #000000;
     border-radius: 96px;
     box-shadow: 4px 4px #608089;
+    transition: transform ease-in-out 0.14s;
+    will-change: transform;
+    cursor: pointer;
 
     @include mobile {
       border-width: 1px;
+    }
+
+    &:hover {
+      transform: scale(1.04);
+    }
+
+    &:active {
+      transform: scale(0.94);
     }
 
     &-image {

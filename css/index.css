@@ -132,6 +132,8 @@ img {
   background: url(../assets/button-bg.svg) center no-repeat;
   background-size: cover;
   box-shadow: 4px 4px 0 #271301;
+  transition: transform ease-in-out 0.14s;
+  will-change: transform;
   cursor: pointer;
 }
 @media (max-width: 992px) {
@@ -152,6 +154,12 @@ img {
     width: 28px;
     border-width: 2px;
   }
+}
+.header__social-link:hover {
+  transform: scale(1.02);
+}
+.header__social-link:active {
+  transform: scale(0.94);
 }
 .header__social-link::before {
   content: "";
@@ -788,11 +796,20 @@ img {
   border: 2px solid #000000;
   border-radius: 96px;
   box-shadow: 4px 4px #608089;
+  transition: transform ease-in-out 0.14s;
+  will-change: transform;
+  cursor: pointer;
 }
 @media (max-width: 576px) {
   .partners__link {
     border-width: 1px;
   }
+}
+.partners__link:hover {
+  transform: scale(1.04);
+}
+.partners__link:active {
+  transform: scale(0.94);
 }
 .partners__link-image {
   display: block;
