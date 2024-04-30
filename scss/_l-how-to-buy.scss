@@ -1,0 +1,163 @@
+.how-to-buy {
+  padding: 170px 0 60px;
+  overflow: hidden;
+  background: url(../assets/how-to-buy-bg.webp) center no-repeat;
+  background-size: 100% 100%;
+
+  @include desktop {
+    background-size: cover;
+  }
+
+  @include laptop {
+    padding: 60px 0;
+  }
+
+  & .container {
+    display: flex;
+    max-width: 1330px;
+
+    @include laptop {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__gollume {
+    flex: 1 1 auto;
+
+    @include laptop {
+      flex: 0 1 auto;
+      display: flex;
+      justify-content: center;
+    }
+
+    &-image {
+      display: block;
+      max-width: 100%;
+      height: auto;
+
+      @include laptop {
+        width: 600px;
+      }
+    }
+  }
+
+  &__info {
+    flex: 0 0 660px;
+    margin-left: -20px;
+
+    @include desktop {
+      flex: 0 0 540px;
+      margin-left: 0;
+    }
+
+    @include laptop {
+      flex: 0 1 auto;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    margin: 0 0 32px;
+    margin-left: -20px;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    color: #84a2aa;
+    text-shadow: 2px 2px #271301, -2px -2px #271301, -2px 2px #271301, 2px -2px #271301,
+      6px 6px #608089;
+    transform: rotate(-3deg);
+
+    @include desktop {
+      margin-left: -20px;
+      font-size: 64px;
+    }
+
+    @include laptop {
+      font-size: 96px;
+      margin: 0 0 24px;
+      margin-left: 0;
+    }
+
+    @include mobile {
+      font-size: 50px;
+      text-align: center;
+    }
+  }
+
+  &__roadlist {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 0 0 38px;
+    transform: rotate(-3deg);
+
+    &-item {
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 100%;
+      letter-spacing: 0.02em;
+      color: #84a2aa;
+      text-shadow: 1px 1px #271301, -1px -1px #271301, -1px 1px #271301, 1px -1px #271301,
+        3px 3px #608089;
+
+      @include mobile {
+        font-size: 24px;
+        line-height: 120%;
+      }
+    }
+  }
+
+  &__conditions {
+    display: flex;
+    align-items: center;
+    padding: 30px 30px 40px 16px;
+    box-sizing: border-box;
+    aspect-ratio: 2.7436238 / 1;
+    background: url(../assets/conditions-bg.svg) center no-repeat;
+
+    @include mobile {
+      padding: 10px 24px;
+    }
+
+    @include mobilesm {
+      padding: 10px 16px;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin: 0;
+
+      transform: rotate(-2deg);
+
+      @include mobile {
+        gap: 4px;
+        padding-left: 10px;
+      }
+
+      &-item {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 120%;
+        letter-spacing: 0.02em;
+        color: #fff;
+
+        @include mobile {
+          font-size: 13px;
+        }
+
+        @include mobilesm {
+          font-size: 10px;
+        }
+
+        & span {
+          word-break: break-all;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

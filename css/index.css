@@ -804,3 +804,169 @@ img {
     max-width: 64px;
   }
 }
+
+.how-to-buy {
+  padding: 170px 0 60px;
+  overflow: hidden;
+  background: url(../assets/how-to-buy-bg.webp) center no-repeat;
+  background-size: 100% 100%;
+}
+@media (max-width: 1200px) {
+  .how-to-buy {
+    background-size: cover;
+  }
+}
+@media (max-width: 992px) {
+  .how-to-buy {
+    padding: 60px 0;
+  }
+}
+.how-to-buy .container {
+  display: flex;
+  max-width: 1330px;
+}
+@media (max-width: 992px) {
+  .how-to-buy .container {
+    flex-direction: column-reverse;
+  }
+}
+.how-to-buy__gollume {
+  flex: 1 1 auto;
+}
+@media (max-width: 992px) {
+  .how-to-buy__gollume {
+    flex: 0 1 auto;
+    display: flex;
+    justify-content: center;
+  }
+}
+.how-to-buy__gollume-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 992px) {
+  .how-to-buy__gollume-image {
+    width: 600px;
+  }
+}
+.how-to-buy__info {
+  flex: 0 0 660px;
+  margin-left: -20px;
+}
+@media (max-width: 1200px) {
+  .how-to-buy__info {
+    flex: 0 0 540px;
+    margin-left: 0;
+  }
+}
+@media (max-width: 992px) {
+  .how-to-buy__info {
+    flex: 0 1 auto;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+.how-to-buy__title {
+  margin: 0 0 32px;
+  margin-left: -20px;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  color: #84a2aa;
+  text-shadow: 2px 2px #271301, -2px -2px #271301, -2px 2px #271301, 2px -2px #271301, 6px 6px #608089;
+  transform: rotate(-3deg);
+}
+@media (max-width: 1200px) {
+  .how-to-buy__title {
+    margin-left: -20px;
+    font-size: 64px;
+  }
+}
+@media (max-width: 992px) {
+  .how-to-buy__title {
+    font-size: 96px;
+    margin: 0 0 24px;
+    margin-left: 0;
+  }
+}
+@media (max-width: 576px) {
+  .how-to-buy__title {
+    font-size: 50px;
+    text-align: center;
+  }
+}
+.how-to-buy__roadlist {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0 0 38px;
+  transform: rotate(-3deg);
+}
+.how-to-buy__roadlist-item {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  color: #84a2aa;
+  text-shadow: 1px 1px #271301, -1px -1px #271301, -1px 1px #271301, 1px -1px #271301, 3px 3px #608089;
+}
+@media (max-width: 576px) {
+  .how-to-buy__roadlist-item {
+    font-size: 24px;
+    line-height: 120%;
+  }
+}
+.how-to-buy__conditions {
+  display: flex;
+  align-items: center;
+  padding: 30px 30px 40px 16px;
+  box-sizing: border-box;
+  aspect-ratio: 2.7436238/1;
+  background: url(../assets/conditions-bg.svg) center no-repeat;
+}
+@media (max-width: 576px) {
+  .how-to-buy__conditions {
+    padding: 10px 24px;
+  }
+}
+@media (max-width: 400px) {
+  .how-to-buy__conditions {
+    padding: 10px 16px;
+  }
+}
+.how-to-buy__conditions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  transform: rotate(-2deg);
+}
+@media (max-width: 576px) {
+  .how-to-buy__conditions-list {
+    gap: 4px;
+    padding-left: 10px;
+  }
+}
+.how-to-buy__conditions-list-item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+@media (max-width: 576px) {
+  .how-to-buy__conditions-list-item {
+    font-size: 13px;
+  }
+}
+@media (max-width: 400px) {
+  .how-to-buy__conditions-list-item {
+    font-size: 10px;
+  }
+}
+.how-to-buy__conditions-list-item span {
+  word-break: break-all;
+  font-weight: 700;
+}
